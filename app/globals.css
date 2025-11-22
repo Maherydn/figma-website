@@ -24,3 +24,68 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.animate-updown {
+  animation: updown 2s ease-in-out infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px); /* monte */
+  }
+  100% {
+    transform: translateY(0); /* redescend */
+  }
+}
+
+.animate-avatar {
+  animation: avatar 2s ease-in-out infinite;
+}
+
+@keyframes avatar {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5px); /* monte */
+  }
+  100% {
+    transform: translateX(0); /* redescend */
+  }
+}
+
+.animate-avatar-y {
+  animation: avatar-y 2s ease-in-out infinite;
+}
+
+@keyframes avatar-y {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); /* monte */
+  }
+  100% {
+    transform: translateY(0); /* redescend */
+  }
+}
+
+.scroller-content {
+  display: flex;
+  gap: 3rem;
+  width: max-content; 
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 25px)); /* Correct */
+  }
+}
+
