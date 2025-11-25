@@ -4,7 +4,7 @@ import Parteners from "./Parteners";
 
 const PartenerSection = () => {
   return (
-    <section className="lg:h-screen h-fit w-full flex flex-col justify-center items-center gap-12 py-6 lg:py-0">
+    <section className="lg:h-screen h-fit max-h-[1080px] w-full flex flex-col justify-center items-center gap-12 py-6 lg:py-0">
       <div className="lg:w-4xl lg:h-[500px] w-80 h-56 rounded-3xl relative flex justify-center items-center animate-updown">
         <div className="absolute inset-0 lg:w-full lg:h-full ">
           <Image src="/partenerSection/bg.png" alt="background" />
@@ -29,7 +29,7 @@ const PartenerSection = () => {
         </div>
       </div>
 
-      <div className="relative overflow-hidden text-nowrap lg:w-6xl w-full px-2">
+      <div className="relative overflow-hidden text-nowrap xl:w-6xl w-full px-2">
         <div className="h-8 flex scroller-content ">
           <Parteners />
 

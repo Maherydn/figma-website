@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
-}
+} */
 
-@theme inline {
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -17,13 +17,13 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
-body {
+/* body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 .animate-updown {
   animation: updown 2s ease-in-out infinite;
@@ -88,4 +88,21 @@ body {
     transform: translateX(calc(-50% - 25px)); /* Correct */
   }
 }
+
+.scroller-content-reverse {
+  display: flex;
+  gap: 3rem;
+  width: max-content; 
+  animation: scroll-right 15s linear infinite; /* nom de l'animation */
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%); /* commence à -50% */
+  }
+  100% {
+    transform: translateX(0); /* finit à 0 */
+  }
+}
+
 

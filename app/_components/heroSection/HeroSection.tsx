@@ -2,7 +2,7 @@ import Image from "../Image";
 
 const HeroSection = () => {
   return (
-    <section className="lg:h-screen h-fit w-full relative flex  justify-center items-center py-4 lg:py-0 ">
+    <section className="lg:h-screen h-fit max-h-[1080px] w-full  relative flex  justify-center items-center p-4 g:p-0 ">
       <div className="absolute inset-0 w-full h-full -z-10">    
         <Image src="/heroSection/background.png" alt="background" />
       </div>

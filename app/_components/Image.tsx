@@ -8,7 +8,7 @@ const Image: React.FC<ImageProps> = ({ src, alt }) => {
     <img
       src={src}
       alt={alt}
-      className="w-full h-full"
+      className=" w-full h-full object-cover"
     />
   );
 };
