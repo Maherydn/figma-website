@@ -30,7 +30,7 @@ const PartenerSection = () => {
       </div>
 
       <div className="relative overflow-hidden text-nowrap xl:w-6xl w-full px-2">
-        <div className="h-8 flex scroller-content ">
+        <div className="h-8 flex scroller-content cursor-pointer">
           <Parteners />
 
           {/* pour effet scroll */}
